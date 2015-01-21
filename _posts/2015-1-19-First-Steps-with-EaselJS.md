@@ -65,7 +65,7 @@ intro [video](https://www.codeandweb.com/what-is-a-sprite-sheet).
 ![sheet](/img/cam.png)
 
 Now to create a [SpriteSheet](http://www.createjs.com/Docs/EaselJS/classes/SpriteSheet.html),
-we must pass an object containing images, frames, and animations to the SpriteSheet
+we must pass an object containing `images`, `frames`, and `animations` to the SpriteSheet
 class. Other parameters, such as `framerate`, can be added as well. To break each
 down:
   1. images: an array of the images you'll be using.
@@ -142,7 +142,7 @@ about time-based animation in this CreateJS [tutorial](http://createjs.com/tutor
 previous sprite. Then it removes the current one and replaces it with the new.
 
 `changeToStanding` checks for the running sprite's direction and replaces that sprite
-with it's standing counterpart.
+with its standing counterpart.
 
 With that, we have the humble beginnings of a game! This is certainly an early iteration
 of a more involved game, and any feedback is greatly appreciated, especially as more

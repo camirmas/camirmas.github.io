@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initial Success with EaselJS
+title: First Steps with EaselJS
 ---
 
 [header]: https://github.com/camirmas/camirmas.github.io/images/zombies.png
@@ -28,7 +28,7 @@ To get started, create your HTML file. It should look something like this:
       <title>EaselJS Practice</title>
     </head>
     <body onload="init();">
-      <canvas id="demoCanvas" width="900" height="300"></canvas>
+      <canvas id="demoCanvas" width="900" height="600"></canvas>
       <script src="https://code.createjs.com/easeljs-0.8.0.min.js"></script>
       <script src="javascripts/keymaster.js"></script>
       <script src="javascripts/app.js"></script>

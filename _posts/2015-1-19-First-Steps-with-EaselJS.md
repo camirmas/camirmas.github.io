@@ -84,6 +84,7 @@ standing and running animation options for each direction of travel. There is al
 coin sprite sheet image included as well (to be addressed at a later time).
 
 At this point, we're now able to create a sprite sheet for our character:
+
 ~~~ javascript
   var spriteSheet = new createjs.SpriteSheet(data.character);
 ~~~

@@ -3,7 +3,7 @@ layout: post
 title: First Steps with EaselJS
 ---
 
-![header](img/zombie.png)
+![header]({{ site.url }}/img/zombie.png)
 
 This week marked my initial foray into the world of HTML5 game development.
 Through trials and tribulations I acquired the ability to navigate my character
@@ -62,7 +62,7 @@ controlling each frame will give you much more control over your character.
 If you're interested in more of the "why" behind this concept, check out this
 intro [video](https://www.codeandweb.com/what-is-a-sprite-sheet).
 
-![SpriteSheet](https://github.com/camirmas/easeljs-gaming/blob/master/img/cam_sprite.png)
+![sheet](/img/cam.png)
 
 Now to create a [SpriteSheet](http://www.createjs.com/Docs/EaselJS/classes/SpriteSheet.html),
 we must pass an object containing images, frames, and animations to the SpriteSheet

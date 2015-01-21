@@ -37,6 +37,7 @@ To get started, create your HTML file. It should look something like this:
 ~~~
 
 A couple of important parts here:
+
 1. You'll initialize your game when the body of the page is loaded. `onload="init();"`
 2. The `canvas` element will go inside the body. It needs an id so that you can
 create your EaselJS stage upon initialization.
@@ -68,12 +69,14 @@ Now to create a [SpriteSheet](http://www.createjs.com/Docs/EaselJS/classes/Sprit
 we must pass an object containing `images`, `frames`, and `animations` to the SpriteSheet
 class. Other parameters, such as `framerate`, can be added as well. To break each
 down:
+
   1. images: an array of the images you'll be using.
   2. frames: how big each frame in your sprite sheet is, and where it will be
   placed. It is very important to get this correct, or you'll end up with some
   very strange sprites.
   3. animations: specify a range of images from your sprite sheet, or select
   individual images by index.
+
 Check out the docs for more options! One great benefit of Easel and the entire CreateJS
 suite of libraries is that the docs are very detailed and thorough (not to say
 they aren't complicated though).

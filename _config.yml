@@ -1,7 +1,7 @@
 # Site settings
-title: Blog
-header-img: img/profile.jpeg
-email: your-email@yourdomain.com
+title: "Traveled"
+header-img: img/banner.jpg
+email: cjirmas@gmail.com
 description: Cameron Irmas - Blog
 baseurl: ""
 url: "http://camirmas.github.io"

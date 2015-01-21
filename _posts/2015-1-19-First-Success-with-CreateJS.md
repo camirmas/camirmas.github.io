@@ -22,19 +22,19 @@ HTML5 Canvas elements before reading this tutorial.
 
 To get started, create your HTML file. It should look something like this:
 
-```html
-<html>
-  <head>
-    <title>EaselJS Practice</title>
-  </head>
-  <body onload="init();">
-    <canvas id="demoCanvas" width="900" height="300"></canvas>
-    <script src="https://code.createjs.com/easeljs-0.8.0.min.js"></script>
-    <script src="javascripts/keymaster.js"></script>
-    <script src="javascripts/app.js"></script>
-  </body>
-</html>
-```
+~~~ html
+  <html>
+    <head>
+      <title>EaselJS Practice</title>
+    </head>
+    <body onload="init();">
+      <canvas id="demoCanvas" width="900" height="300"></canvas>
+      <script src="https://code.createjs.com/easeljs-0.8.0.min.js"></script>
+      <script src="javascripts/keymaster.js"></script>
+      <script src="javascripts/app.js"></script>
+    </body>
+  </html>
+~~~
 
 A couple of important parts here:
 1. You'll initialize your game when the body of the page is loaded. `onload="init();"`
@@ -84,17 +84,17 @@ standing and running animation options for each direction of travel. There is al
 coin sprite sheet image included as well (to be addressed at a later time).
 
 At this point, we're now able to create a sprite sheet for our character:
-```javascript
-var spriteSheet = new createjs.SpriteSheet(data.character);
-```
+~~~ javascript
+  var spriteSheet = new createjs.SpriteSheet(data.character);
+~~~
 
 This will essentially look the same for the coin SpriteSheet as well. Now, we can use
 it to create our individual sprites with different animations. For example, a sprite
 for running left will look like this:
 
-```javascript
-characterL = new createjs.Sprite(spriteSheet, "runL");
-```
+~~~ javascript
+  characterL = new createjs.Sprite(spriteSheet, "runL");
+~~~
 
 Note that the Sprite takes a parameter for the SpriteSheet, which in this case is
 the one we created for our character; and another for the animation, which should correspond with
@@ -104,9 +104,9 @@ for the other animations and you'll be nearly set to walk in any direction!
 When you're ready to set the character on the stage for his/her big performance,
 a simple staging is required:
 
-```javascript
-stage.addChild(currentCharacter);
-```
+~~~ javascript
+  stage.addChild(currentCharacter);
+~~~
 
 Notice that I've set a currentCharacter variable; this is meant to help switch
 animation states. I'm sure there are more clever ways to handle this, but this
@@ -119,17 +119,17 @@ class, which provides the heartbeat for our game, firing at a certain interval.
 We'll use the RAF, or requestAnimationFrame timing mode, which tells the browser
 that we are looking to create and update animations:
 
-```javascript
-createjs.Ticker.timingMode = createjs.Ticker.RAF;
-```
+~~~javascript
+  createjs.Ticker.timingMode = createjs.Ticker.RAF;
+~~~
 
 We can now add event listeners for our stage, as well as for our move function,
 which we'll get to next:
 
-```javascript
-createjs.Ticker.addEventListener("tick", stage);
-createjs.Ticker.addEventListener("tick", move);
-```
+~~~javascript
+  createjs.Ticker.addEventListener("tick", stage);
+  createjs.Ticker.addEventListener("tick", move);
+~~~
 
 `move` checks to see if one of the arrow keys is pressed (thanks Keymaster!);
 if so, it will change the sprite to that of the character running in the direction of the arrow pressed.

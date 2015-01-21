@@ -123,14 +123,14 @@ class, which provides the heartbeat for our game, firing at a certain interval.
 We'll use the RAF, or requestAnimationFrame timing mode, which tells the browser
 that we are looking to create and update animations:
 
-~~~javascript
+~~~ javascript
   createjs.Ticker.timingMode = createjs.Ticker.RAF;
 ~~~
 
 We can now add event listeners for our stage, as well as for our move function,
 which we'll get to next:
 
-~~~javascript
+~~~ javascript
   createjs.Ticker.addEventListener("tick", stage);
   createjs.Ticker.addEventListener("tick", move);
 ~~~
